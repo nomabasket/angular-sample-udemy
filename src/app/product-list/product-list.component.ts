@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from '../../shared/product.module';
 
 import { products } from '../products';
 
@@ -8,13 +9,12 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products;
+  products: Product = products;
 
   share() {
     window.alert('The product has been shared!');
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
